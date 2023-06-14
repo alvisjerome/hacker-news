@@ -14,6 +14,10 @@
 		1441E9232A39F48800BFCC8F /* Hacker_NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441E9222A39F48800BFCC8F /* Hacker_NewsTests.swift */; };
 		1441E92D2A39F48800BFCC8F /* Hacker_NewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441E92C2A39F48800BFCC8F /* Hacker_NewsUITests.swift */; };
 		1441E92F2A39F48800BFCC8F /* Hacker_NewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441E92E2A39F48800BFCC8F /* Hacker_NewsUITestsLaunchTests.swift */; };
+		1441E93D2A39F63D00BFCC8F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441E93C2A39F63D00BFCC8F /* NetworkManager.swift */; };
+		1441E93F2A39F78700BFCC8F /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441E93E2A39F78700BFCC8F /* PostData.swift */; };
+		1441E9422A3A0F7600BFCC8F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441E9412A3A0F7600BFCC8F /* DetailView.swift */; };
+		1441E9442A3A125C00BFCC8F /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441E9432A3A125C00BFCC8F /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		1441E9282A39F48800BFCC8F /* Hacker NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hacker NewsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1441E92C2A39F48800BFCC8F /* Hacker_NewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hacker_NewsUITests.swift; sourceTree = "<group>"; };
 		1441E92E2A39F48800BFCC8F /* Hacker_NewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hacker_NewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1441E93C2A39F63D00BFCC8F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1441E93E2A39F78700BFCC8F /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		1441E9412A3A0F7600BFCC8F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1441E9432A3A125C00BFCC8F /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				1441E9112A39F48700BFCC8F /* Hacker_NewsApp.swift */,
-				1441E9132A39F48700BFCC8F /* ContentView.swift */,
+				1441E93B2A39F62A00BFCC8F /* Models */,
+				1441E9402A3A0F1A00BFCC8F /* Views */,
 				1441E9152A39F48700BFCC8F /* Assets.xcassets */,
 				1441E9172A39F48700BFCC8F /* Preview Content */,
 			);
@@ -125,6 +134,25 @@
 				1441E92E2A39F48800BFCC8F /* Hacker_NewsUITestsLaunchTests.swift */,
 			);
 			path = "Hacker NewsUITests";
+			sourceTree = "<group>";
+		};
+		1441E93B2A39F62A00BFCC8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1441E93C2A39F63D00BFCC8F /* NetworkManager.swift */,
+				1441E93E2A39F78700BFCC8F /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1441E9402A3A0F1A00BFCC8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1441E9132A39F48700BFCC8F /* ContentView.swift */,
+				1441E9412A3A0F7600BFCC8F /* DetailView.swift */,
+				1441E9432A3A125C00BFCC8F /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1441E93D2A39F63D00BFCC8F /* NetworkManager.swift in Sources */,
+				1441E93F2A39F78700BFCC8F /* PostData.swift in Sources */,
 				1441E9142A39F48700BFCC8F /* ContentView.swift in Sources */,
+				1441E9442A3A125C00BFCC8F /* WebView.swift in Sources */,
+				1441E9422A3A0F7600BFCC8F /* DetailView.swift in Sources */,
 				1441E9122A39F48700BFCC8F /* Hacker_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
